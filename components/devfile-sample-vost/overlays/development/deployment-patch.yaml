@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-vost
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0062-tenant/cin4s-839-0062-app/devfile-sample-vost@sha256:621bbfd6fc983eb47ef4dc3b6dc7f9543642b5bdcd4a03a304a644f564ea2897
+        name: my-nodejs
+        resources: {}
+status: {}
